@@ -57,8 +57,7 @@ def processar_temperaturas(path_do_txt: Path):
 
     # Formatando os resultados para exibição
     formatted_results = {
-        station: f"{min_temp:.1f}/{mean_temp:.1f}/{max_temp:.1f}"
-        for station, (min_temp, mean_temp, max_temp) in sorted_results.items()
+        station: f"{min_temp:.1f}/{mean_temp:.1f}/{max_temp:.1f}" for station, (min_temp, mean_temp, max_temp) in sorted_results.items()
     }
 
     end_time = time.time()  # Tempo de término
